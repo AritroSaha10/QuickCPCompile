@@ -34,7 +34,7 @@ int main(int argc, char *argv[]) {
         strcat(fname, argv[1]);
         strcat(fname, ".exe");
 
-        printf("\nCompilation has likely completed!\nRunning program (can input now)...\n", fname);
+        printf("\nCompilation has likely completed!\nRunning program (can input now)...\n");
         system(fname);
     }
     return 0;
