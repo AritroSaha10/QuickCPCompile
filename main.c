@@ -4,11 +4,15 @@
 
 // This does not sanatize inputs as it assumes that you are running this on your own code.
 // Takes the filename (without the extension!) as a parameter
-
 int main(int argc, char *argv[]) {
     char cmd[256] = "";
 
-    if (argc < 2) {
+    if (argc != 2) {
+        printf("QuickCPCompile:\n\tQuickly compile C++ files written for competitive programming competitions.\n");
+        printf("Usage:\n\tCompile c++ files on the c++17 standard with optimization and all errors / warnings\n");
+        printf("Example of command:\n\t\"QuickCPCompile.exe HelloWorld\"\n");
+        printf("Note:\n\tWhen providing the name, please do not include the extension.\n");
+        printf("\t\tExample: If the source filename is \"HelloWorld.cpp\", then use HelloWorld as the argument\n");
         return 1;
     }
 
