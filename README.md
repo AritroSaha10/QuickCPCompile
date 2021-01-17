@@ -12,5 +12,9 @@ It's a bit time consuming to type out `g++ -std=c++17 -O2 -Wall main.cpp -o main
 
 `main` represents the filename without the extension. This assumes that the extension is `.cpp`. 
 
+## Compilation
+The file doesn't need any linking and uses only C standard libraries, so you can just compile it without any other additions. Here's an example of a compile command:
+`gcc -O2 -Wall CPcompile.c -o QuickCPCompile.exe`
+
 ## Author
 Aritro Saha: [GitHub](https://github.com/AritroSaha10)
